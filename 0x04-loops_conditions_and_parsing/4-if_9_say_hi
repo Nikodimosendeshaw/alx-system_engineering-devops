@@ -9,10 +9,7 @@ do
 	then
 		echo "Hi"
 	fi
-	if [ "$COUNT" -ne 9 ]
-	then
-		echo "Best School"
-	fi
+	echo "Best School"
 	
 	COUNT=$((COUNT+1))
 done
