@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 #4-if_9_say_hi
 
-COUNT=0
+COUNT=1
 
-while [ $COUNT -le 9 ]
+while [ $COUNT -le 10 ]
 do
-	if [ $COUNT -eq 8 ]
+	if [ $COUNT -eq 9 ]
 	then
 		echo "Hi"
 	else
