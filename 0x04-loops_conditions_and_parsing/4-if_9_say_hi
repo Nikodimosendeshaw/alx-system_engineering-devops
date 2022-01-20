@@ -5,11 +5,11 @@ COUNT=1
 
 while [ $COUNT -le 10 ]
 do
-	if [ $COUNT -eq 9 ]
+	if [ "$COUNT" -eq 9 ]
 	then
 		echo "Hi"
 	fi
-	if [ $COUNT -ne 9 ]
+	if [ "$COUNT" -ne 9 ]
 	then
 		echo "Best School"
 	fi
