@@ -7,9 +7,10 @@ while [ $COUNT -le 10 ]
 do
 	if [ "$COUNT" -eq 9 ]
 	then
-		echo "Hi"
+		echo -e  "Best School\nHi"
+	else
+		echo "Best School"
 	fi
-	echo "Best School"
 	
 	COUNT=$((COUNT+1))
 done
