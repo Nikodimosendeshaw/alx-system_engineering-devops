@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#bad luck
+
+C=1
+
+while [ $C -le 20 ]
+do
+	case $C in
+		4) echo -e "$C\nbad luck from China";;
+		9) echo -e "$C\nbad luck from Japan";;
+		17) echo -e "$C\nbad luck from Italy";;
+		*) echo "$C";;
+	esac
+	C=$((C+1))
+done
