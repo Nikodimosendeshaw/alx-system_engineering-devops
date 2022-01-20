@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#print Best School 10 times using while loop
+
+COUNT=0
+
+while [ $COUNT -le 9 ]
+do
+	echo "Best School"
+	COUNT=$((COUNT+1))
+done
