@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #host on a network
 
-args=("$0")
-command ping -c 5 "${args[1]}"
+args=("$1")
+command ping -c 5 "${args}"
