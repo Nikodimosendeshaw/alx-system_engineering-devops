@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#tcp and udp
+
+command netstat -an -p tcp
