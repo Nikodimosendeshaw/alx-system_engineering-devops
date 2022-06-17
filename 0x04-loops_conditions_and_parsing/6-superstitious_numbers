@@ -1,15 +1,18 @@
 #!/usr/bin/env bash
-#bad luck
-
-C=1
-
-while [ $C -le 20 ]
+#Bash script that displays numbers from 1 to 20 and:
+i=1
+while [ $i -le 20 ]
 do
-	case $C in
-		4) echo -e "$C\nbad luck from China";;
-		9) echo -e "$C\nbad luck from Japan";;
-		17) echo -e "$C\nbad luck from Italy";;
-		*) echo "$C";;
+	case $i in
+	 	4)
+			echo -e "$i\nbad luck from China";;
+		
+		9)
+			echo -e "$i\nbad luck from Japan";;
+		17)
+			echo -e "$i\nbad luck from Italy";;
+		*)
+			echo "$i"
 	esac
-	C=$((C+1))
+((i++))
 done

@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
-#bad and good luck
-C=1
-
-while [ $C -lt 11 ]
+#isplays Best School and then Hi on a new line.
+i=1
+while [ $i -le 10 ]
 do
-	if [ $C -eq 4 ]
+	if [ $i -eq 4 ]
 	then
 		echo "bad luck"
-	elif [ $C -eq 8 ]
+	elif [ $i -eq 8 ]
 	then
 		echo "good luck"
 	else
 		echo "Best School"
 	fi
-	C=$((C+1))
+((i++))
 done

@@ -1,16 +1,19 @@
 #!/usr/bin/env bash
-#7-clock
-
-H=0
-
-while [ $H -le 12 ]
+#Bash script that displays the time for 12 hours and 59 minutes:
+i=1
+echo "Hour: 0"
+while [ $i -le 13 ]
 do
-	M=1
-	echo "Hour: $H"
-	while [ $M -le 59 ]
+	j=1
+	while [ $j -lt 60 ]
 	do
-		echo "$M"
-		M=$((M+1))
+		echo "$j"
+	((j++))
 	done
-	H=$((H+1))
+
+	if ((i <= 12))
+	then
+		echo "Hour: $i"
+	fi
+((i++))
 done
